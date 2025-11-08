@@ -33,7 +33,7 @@ function App() {
     setIsLoading(true);
     try {
       const response = await fetch(
-        `https://api.spotify.com/v1/search?q=${keyword}&type=track&offset=${resultOffset}`,
+        `https://api.spotify.com/v1/search?q=${keyword}&type=track&offset=${resultOffset}`, //replace with your API
         {
           headers: {
             Authorization: `Bearer ${token}`,
